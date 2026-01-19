@@ -99,9 +99,9 @@ font_data = ExtResource( 4 )
 anchor_left = -0.008
 anchor_right = 0.664
 anchor_bottom = 1.013
-offset_left = 8.192
-offset_right = -5.93604
-offset_bottom = -7.79999
+margin_left = 8.192
+margin_right = -5.93604
+margin_bottom = -7.79999
 grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
@@ -117,35 +117,35 @@ scale = Vector2( 4.125, 5.06667 )
 texture = ExtResource( 9 )
 
 [node name="Panel2" type="Panel" parent="."]
-offset_left = -2.0
-offset_top = 1.0
-offset_right = 674.0
-offset_bottom = 596.0
+margin_left = -2.0
+margin_top = 1.0
+margin_right = 674.0
+margin_bottom = 596.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource( 1 )
+custom_styles/panel = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Background" type="Panel" parent="."]
-offset_left = 5.0
-offset_top = 16.0
-offset_right = 667.0
-offset_bottom = 593.0
+margin_left = 5.0
+margin_top = 16.0
+margin_right = 667.0
+margin_bottom = 593.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/panel = SubResource( 2 )
+custom_styles/panel = SubResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PanelTop" type="Panel" parent="."]
-offset_left = 5.0
-offset_top = 5.0
-offset_right = 667.0
-offset_bottom = 50.0
-theme_override_styles/panel = SubResource( 3 )
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 667.0
+margin_bottom = 50.0
+custom_styles/panel = SubResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -154,15 +154,15 @@ __meta__ = {
 anchor_top = 0.067
 anchor_right = 0.926
 anchor_bottom = 0.933
-offset_left = 20.0
-offset_top = -0.0150001
-offset_right = -0.0120239
-offset_bottom = 2.015
-theme_override_fonts/font = SubResource( 4 )
-theme_override_colors/font_color = Color( 0.0392157, 0.164706, 0.32549, 1 )
-theme_override_colors/font_color_shadow = Color( 0.941176, 0.937255, 0.937255, 0.529412 )
-theme_override_constants/shadow_offset_x = 3
-theme_override_constants/shadow_offset_y = 3
+margin_left = 20.0
+margin_top = -0.0150001
+margin_right = -0.0120239
+margin_bottom = 2.015
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0392157, 0.164706, 0.32549, 1 )
+custom_colors/font_color_shadow = Color( 0.941176, 0.937255, 0.937255, 0.529412 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
 text = "Window title"
 align = 1
 valign = 1
@@ -175,10 +175,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -40.0
-offset_top = -15.5
-offset_right = -5.0
-offset_bottom = 16.5
+margin_left = -40.0
+margin_top = -15.5
+margin_right = -5.0
+margin_bottom = 16.5
 focus_mode = 0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 6 )
@@ -189,31 +189,31 @@ __meta__ = {
 }
 
 [node name="select_all_Button" type="Button" parent="PanelTop"]
-offset_right = 12.0
-offset_bottom = 20.0
-scale = Vector2( 1e-05, 1e-05 )
+margin_right = 12.0
+margin_bottom = 20.0
+rect_scale = Vector2( 1e-05, 1e-05 )
 focus_mode = 0
 shortcut = SubResource( 8 )
 clip_text = true
 
 [node name="PanelBottom" type="Panel" parent="."]
-offset_left = 10.0
-offset_top = 55.0
-offset_right = 662.0
-offset_bottom = 592.0
+margin_left = 10.0
+margin_top = 55.0
+margin_right = 662.0
+margin_bottom = 592.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 1
-theme_override_styles/panel = SubResource( 9 )
+custom_styles/panel = SubResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="backButton" type="TextureButton" parent="PanelBottom"]
-offset_left = 12.0
-offset_top = 13.0
-offset_right = 44.0
-offset_bottom = 45.0
+margin_left = 12.0
+margin_top = 13.0
+margin_right = 44.0
+margin_bottom = 45.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 5 )
@@ -223,11 +223,11 @@ __meta__ = {
 }
 
 [node name="createDirectory" type="TextureButton" parent="PanelBottom"]
-offset_left = 53.0
-offset_top = 20.0
-offset_right = 80.0
-offset_bottom = 41.0
-tooltip_text = "Create a new folder and go into it"
+margin_left = 53.0
+margin_top = 20.0
+margin_right = 80.0
+margin_bottom = 41.0
+hint_tooltip = "Create a new folder and go into it"
 focus_mode = 0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 10 )
@@ -241,10 +241,10 @@ anchor_left = 0.982
 anchor_top = 0.939
 anchor_right = 0.982
 anchor_bottom = 0.939
-offset_left = -31.264
-offset_top = -16.243
-offset_right = 0.735962
-offset_bottom = 15.757
+margin_left = -31.264
+margin_top = -16.243
+margin_right = 0.735962
+margin_bottom = 15.757
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
@@ -254,12 +254,12 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="PanelBottom"]
-offset_left = 94.0
-offset_top = 12.0
-offset_right = 319.0
-offset_bottom = 46.0
-theme_override_fonts/font = SubResource( 10 )
-theme_override_colors/font_color = Color( 0.729412, 0.823529, 0.823529, 1 )
+margin_left = 94.0
+margin_top = 12.0
+margin_right = 319.0
+margin_bottom = 46.0
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.729412, 0.823529, 0.823529, 1 )
 text = "Current Path:"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -269,12 +269,12 @@ __meta__ = {
 anchor_top = 0.026
 anchor_right = 0.986
 anchor_bottom = 0.084
-offset_left = 327.0
-offset_top = 0.0380001
-offset_right = -52.872
-offset_bottom = -0.107998
+margin_left = 327.0
+margin_top = 0.0380001
+margin_right = -52.872
+margin_bottom = -0.107998
 focus_mode = 0
-theme_override_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 11 )
 editable = false
 __meta__ = {
 "_edit_use_anchors_": false
@@ -285,10 +285,10 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -54.0
-offset_top = -254.5
-offset_right = -8.0
-offset_bottom = -234.5
+margin_left = -54.0
+margin_top = -254.5
+margin_right = -8.0
+margin_bottom = -234.5
 focus_mode = 0
 mouse_default_cursor_shape = 2
 __meta__ = {
@@ -296,12 +296,12 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="PanelBottom"]
-offset_left = 8.0
-offset_top = 488.0
-offset_right = 233.0
-offset_bottom = 522.0
-theme_override_fonts/font = SubResource( 10 )
-theme_override_colors/font_color = Color( 0.729412, 0.823529, 0.823529, 1 )
+margin_left = 8.0
+margin_top = 488.0
+margin_right = 233.0
+margin_bottom = 522.0
+custom_fonts/font = SubResource( 10 )
+custom_colors/font_color = Color( 0.729412, 0.823529, 0.823529, 1 )
 text = "File Selected:"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -311,12 +311,12 @@ __meta__ = {
 anchor_top = 0.901
 anchor_right = 0.917
 anchor_bottom = 0.98
-offset_left = 247.0
-offset_top = 5.16299
-offset_right = 0.115967
-offset_bottom = -6.26001
+margin_left = 247.0
+margin_top = 5.16299
+margin_right = 0.115967
+margin_bottom = -6.26001
 focus_mode = 0
-theme_override_fonts/font = SubResource( 11 )
+custom_fonts/font = SubResource( 11 )
 editable = false
 placeholder_text = "no file selected"
 __meta__ = {
@@ -327,35 +327,35 @@ __meta__ = {
 anchor_top = 0.114
 anchor_right = 1.0
 anchor_bottom = 0.881
-offset_top = -0.218002
-offset_bottom = -0.0970154
+margin_top = -0.218002
+margin_bottom = -0.0970154
 color = Color( 0.727448, 0.75901, 0.769531, 1 )
 
 [node name="ScrollContainer" type="ScrollContainer" parent="PanelBottom"]
 anchor_top = 0.119
 anchor_right = 0.979
 anchor_bottom = 0.881
-offset_top = -2.903
-offset_right = 13.692
-offset_bottom = -0.0970154
+margin_top = -2.903
+margin_right = 13.692
+margin_bottom = -0.0970154
 mouse_filter = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelBottom/ScrollContainer"]
-offset_right = 652.0
-offset_bottom = 412.0
+margin_right = 652.0
+margin_bottom = 412.0
 grow_horizontal = 0
 grow_vertical = 2
-theme_override_constants/separation = 60
+custom_constants/separation = 60
 
 [node name="Grid" type="GridContainer" parent="PanelBottom/ScrollContainer/VBoxContainer"]
-offset_right = 652.0
-offset_bottom = 412.0
-custom_minimum_size = Vector2( 652, 412 )
+margin_right = 652.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 652, 412 )
 mouse_filter = 0
-theme_override_constants/hseparation = 15
+custom_constants/hseparation = 15
 columns = 5
 __meta__ = {
 "_edit_use_anchors_": false
@@ -377,23 +377,23 @@ color = Color( 0, 0, 0, 0.611765 )
 
 [node name="create_folder_dialog" type="Panel" parent="."]
 visible = false
-offset_left = 54.0
-offset_top = 124.0
-offset_right = 478.0
-offset_bottom = 244.0
-theme_override_styles/panel = SubResource( 12 )
+margin_left = 54.0
+margin_top = 124.0
+margin_right = 478.0
+margin_bottom = 244.0
+custom_styles/panel = SubResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="label" type="Label" parent="create_folder_dialog"]
-offset_left = 20.0
-offset_top = 14.0
-offset_right = 432.0
-offset_bottom = 61.0
-scale = Vector2( 0.459142, 0.96494 )
-theme_override_fonts/font = SubResource( 13 )
-theme_override_colors/font_color = Color( 1, 1, 1, 1 )
+margin_left = 20.0
+margin_top = 14.0
+margin_right = 432.0
+margin_bottom = 61.0
+rect_scale = Vector2( 0.459142, 0.96494 )
+custom_fonts/font = SubResource( 13 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "New Directory:"
 valign = 1
 __meta__ = {
@@ -401,20 +401,20 @@ __meta__ = {
 }
 
 [node name="LineEdit" type="LineEdit" parent="create_folder_dialog"]
-offset_left = 22.0
-offset_top = 68.0
-offset_right = 298.0
-offset_bottom = 106.0
+margin_left = 22.0
+margin_top = 68.0
+margin_right = 298.0
+margin_bottom = 106.0
 caret_blink = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ok_button" type="TextureButton" parent="create_folder_dialog"]
-offset_left = 336.0
-offset_top = 70.0
-offset_right = 368.0
-offset_bottom = 102.0
+margin_left = 336.0
+margin_top = 70.0
+margin_right = 368.0
+margin_bottom = 102.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 7 )
 texture_hover = ExtResource( 8 )
@@ -423,10 +423,10 @@ __meta__ = {
 }
 
 [node name="cancel_button" type="TextureButton" parent="create_folder_dialog"]
-offset_left = 376.0
-offset_top = 70.0
-offset_right = 408.0
-offset_bottom = 102.0
+margin_left = 376.0
+margin_top = 70.0
+margin_right = 408.0
+margin_bottom = 102.0
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 3 )

@@ -498,7 +498,7 @@ animations = [ {
 [node name="CreateAutoTile" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = 168.0
+margin_bottom = 168.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource( 5 )
@@ -517,10 +517,10 @@ __meta__ = {
 }
 
 [node name="ImageList" type="Panel" parent="."]
-offset_left = 16.0
-offset_top = 29.0
-offset_right = 376.0
-offset_bottom = 333.0
+margin_left = 16.0
+margin_top = 29.0
+margin_right = 376.0
+margin_bottom = 333.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -530,8 +530,8 @@ __meta__ = {
 show_behind_parent = true
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 40.0
-offset_bottom = 40.0
+margin_right = 40.0
+margin_bottom = 40.0
 texture = ExtResource( 8 )
 stretch_mode = 1
 __meta__ = {
@@ -540,8 +540,8 @@ __meta__ = {
 
 [node name="title" type="Label" parent="ImageList"]
 anchor_right = 1.0
-offset_bottom = 41.0
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_bottom = 41.0
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Loaded Images:"
 align = 1
 valign = 1
@@ -552,11 +552,11 @@ __meta__ = {
 [node name="list" type="ItemList" parent="ImageList"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 40.0
-offset_right = -20.0
-offset_bottom = -52.0
-theme_override_fonts/font = SubResource( 1 )
+margin_left = 20.0
+margin_top = 40.0
+margin_right = -20.0
+margin_bottom = -52.0
+custom_fonts/font = SubResource( 1 )
 max_text_lines = 5
 __meta__ = {
 "_edit_use_anchors_": false
@@ -566,11 +566,11 @@ __meta__ = {
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = -45.0
-offset_right = -20.0
-offset_bottom = -20.0
-tooltip_text = "Upload images from your hard drives"
+margin_left = 20.0
+margin_top = -45.0
+margin_right = -20.0
+margin_bottom = -20.0
+hint_tooltip = "Upload images from your hard drives"
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 3 )
 text = "Load More"
@@ -579,10 +579,10 @@ __meta__ = {
 }
 
 [node name="AutoTileConfig" type="Panel" parent="."]
-offset_left = 16.0
-offset_top = 344.0
-offset_right = 418.0
-offset_bottom = 648.0
+margin_left = 16.0
+margin_top = 344.0
+margin_right = 418.0
+margin_bottom = 648.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -592,8 +592,8 @@ __meta__ = {
 show_behind_parent = true
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 40.0
-offset_bottom = 40.0
+margin_right = 40.0
+margin_bottom = 40.0
 texture = ExtResource( 8 )
 stretch_mode = 1
 __meta__ = {
@@ -602,8 +602,8 @@ __meta__ = {
 
 [node name="title" type="Label" parent="AutoTileConfig"]
 anchor_right = 1.0
-offset_bottom = 41.0
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_bottom = 41.0
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Tile presets:"
 align = 1
 valign = 1
@@ -613,10 +613,10 @@ __meta__ = {
 
 [node name="OptionButton" type="OptionButton" parent="AutoTileConfig"]
 anchor_right = 1.0
-offset_left = 8.0
-offset_top = 40.0
-offset_right = -8.0
-offset_bottom = 48.0
+margin_left = 8.0
+margin_top = 40.0
+margin_right = -8.0
+margin_bottom = 48.0
 mouse_default_cursor_shape = 2
 text = "AUTOTILE XP"
 items = [ "AUTOTILE XP", null, false, 0, null, "AUTOTILE VXACE - FLOOR", null, false, 1, null, "AUTOTILE VXACE - WALL", null, false, 2, null, "AUTOTILE VXACE - WATERFALL", null, false, 3, null, "AUTOTILE MV - FLOOR", null, false, 4, null, "AUTOTILE MV - WALL", null, false, 5, null, "AUTOTILE MV - WATERFALL", null, false, 6, null, "CUSTOM AUTOTILE", null, false, 7, null, "SINGLE TILE", null, false, 8, null ]
@@ -626,12 +626,12 @@ __meta__ = {
 }
 
 [node name="title2" type="Label" parent="AutoTileConfig"]
-offset_left = 20.0
-offset_top = 88.0
-offset_right = 155.0
-offset_bottom = 129.0
-scale = Vector2( 0.8, 0.5 )
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_left = 20.0
+margin_top = 88.0
+margin_right = 155.0
+margin_bottom = 129.0
+rect_scale = Vector2( 0.8, 0.5 )
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "PREVIEW"
 align = 1
 valign = 1
@@ -642,19 +642,19 @@ __meta__ = {
 [node name="preview_texture" type="TextureRect" parent="AutoTileConfig"]
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 20.0
-offset_top = -40.0
-offset_right = 128.0
-offset_bottom = 96.0
+margin_left = 20.0
+margin_top = -40.0
+margin_right = 128.0
+margin_bottom = 96.0
 expand = true
 stretch_mode = 7
 
 [node name="columns" type="Label" parent="AutoTileConfig"]
-offset_left = 144.0
-offset_top = 72.0
-offset_right = 267.0
-offset_bottom = 113.0
-scale = Vector2( 0.8, 1 )
+margin_left = 144.0
+margin_top = 72.0
+margin_right = 267.0
+margin_bottom = 113.0
+rect_scale = Vector2( 0.8, 1 )
 text = "columns:"
 valign = 1
 __meta__ = {
@@ -662,17 +662,17 @@ __meta__ = {
 }
 
 [node name="SpinBox" type="SpinBox" parent="AutoTileConfig/columns"]
-offset_top = 40.0
-offset_right = 74.0
-offset_bottom = 64.0
-scale = Vector2( 1.4, 1.2 )
+margin_top = 40.0
+margin_right = 74.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1.4, 1.2 )
 editable = false
 
 [node name="rows" type="Label" parent="AutoTileConfig"]
-offset_left = 269.0
-offset_top = 72.0
-offset_right = 349.0
-offset_bottom = 113.0
+margin_left = 269.0
+margin_top = 72.0
+margin_right = 349.0
+margin_bottom = 113.0
 text = "rows:"
 valign = 1
 __meta__ = {
@@ -680,20 +680,20 @@ __meta__ = {
 }
 
 [node name="SpinBox" type="SpinBox" parent="AutoTileConfig/rows"]
-offset_left = -1.52588e-05
-offset_top = 40.0
-offset_right = 74.0
-offset_bottom = 64.0
-scale = Vector2( 1.2, 1.2 )
+margin_left = -1.52588e-05
+margin_top = 40.0
+margin_right = 74.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1.2, 1.2 )
 editable = false
 
 [node name="size_tiles" type="Label" parent="AutoTileConfig"]
-offset_left = 144.0
-offset_top = 155.0
-offset_right = 314.0
-offset_bottom = 196.0
-scale = Vector2( 0.952662, 0.525765 )
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_left = 144.0
+margin_top = 155.0
+margin_right = 314.0
+margin_bottom = 196.0
+rect_scale = Vector2( 0.952662, 0.525765 )
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Size of tiles:"
 valign = 1
 __meta__ = {
@@ -701,10 +701,10 @@ __meta__ = {
 }
 
 [node name="tile_width" type="Label" parent="AutoTileConfig"]
-offset_left = 144.0
-offset_top = 168.0
-offset_right = 233.0
-offset_bottom = 209.0
+margin_left = 144.0
+margin_top = 168.0
+margin_right = 233.0
+margin_bottom = 209.0
 text = "width:"
 valign = 1
 __meta__ = {
@@ -712,22 +712,22 @@ __meta__ = {
 }
 
 [node name="SpinBox" type="SpinBox" parent="AutoTileConfig/tile_width"]
-offset_left = -1.52588e-05
-offset_top = 40.0
-offset_right = 74.0
-offset_bottom = 64.0
-scale = Vector2( 1.2, 1.2 )
-tooltip_text = "Width of the tile"
+margin_left = -1.52588e-05
+margin_top = 40.0
+margin_right = 74.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1.2, 1.2 )
+hint_tooltip = "Width of the tile"
 min_value = 1.0
 max_value = 3840.0
 value = 1.0
 editable = false
 
 [node name="tile_height" type="Label" parent="AutoTileConfig"]
-offset_left = 269.0
-offset_top = 168.0
-offset_right = 363.0
-offset_bottom = 209.0
+margin_left = 269.0
+margin_top = 168.0
+margin_right = 363.0
+margin_bottom = 209.0
 text = "height:"
 valign = 1
 __meta__ = {
@@ -735,12 +735,12 @@ __meta__ = {
 }
 
 [node name="SpinBox" type="SpinBox" parent="AutoTileConfig/tile_height"]
-offset_left = -1.52588e-05
-offset_top = 40.0
-offset_right = 74.0
-offset_bottom = 64.0
-scale = Vector2( 1.2, 1.2 )
-tooltip_text = "Height of the tile"
+margin_left = -1.52588e-05
+margin_top = 40.0
+margin_right = 74.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1.2, 1.2 )
+hint_tooltip = "Height of the tile"
 focus_next = NodePath("../../columns/SpinBox")
 focus_previous = NodePath("../../columns/SpinBox")
 min_value = 1.0
@@ -749,10 +749,10 @@ value = 1.0
 editable = false
 
 [node name="tile_layout" type="Label" parent="AutoTileConfig"]
-offset_left = 25.0
-offset_top = 256.0
-offset_right = 119.0
-offset_bottom = 297.0
+margin_left = 25.0
+margin_top = 256.0
+margin_right = 119.0
+margin_bottom = 297.0
 text = "Layout:"
 valign = 1
 __meta__ = {
@@ -760,11 +760,11 @@ __meta__ = {
 }
 
 [node name="OptionButton" type="OptionButton" parent="AutoTileConfig/tile_layout"]
-offset_left = 119.0
-offset_top = 4.0
-offset_right = 235.0
-offset_bottom = 38.0
-tooltip_text = "Pattern layout  for the Autotiles:
+margin_left = 119.0
+margin_top = 4.0
+margin_right = 235.0
+margin_bottom = 38.0
+hint_tooltip = "Pattern layout  for the Autotiles:
 
 - Old Style : Autotiles from RPG Maker XP
 - New Style: Autotiles from RPG Maker VX, ACE and MV"
@@ -775,11 +775,11 @@ items = [ "Old Style", null, false, 0, null, "New Style", null, false, 1, null ]
 selected = 0
 
 [node name="OptionButton2" type="OptionButton" parent="AutoTileConfig/tile_layout"]
-offset_left = 245.0
-offset_top = 4.0
-offset_right = 361.0
-offset_bottom = 38.0
-tooltip_text = "Type of the Autotile:
+margin_left = 245.0
+margin_top = 4.0
+margin_right = 361.0
+margin_bottom = 38.0
+hint_tooltip = "Type of the Autotile:
 
 -Floor: Autotiles used to draw grounds
 - Wall: Autotiles used to draw walls
@@ -791,10 +791,10 @@ items = [ "Floor", null, false, 0, null, "Wall", null, false, 1, null, "Waterfal
 selected = 0
 
 [node name="SelectedImage" type="Panel" parent="."]
-offset_left = 404.0
-offset_top = 29.0
-offset_right = 836.0
-offset_bottom = 333.0
+margin_left = 404.0
+margin_top = 29.0
+margin_right = 836.0
+margin_bottom = 333.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -804,8 +804,8 @@ __meta__ = {
 show_behind_parent = true
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 54.0
-offset_bottom = 43.0
+margin_right = 54.0
+margin_bottom = 43.0
 texture = ExtResource( 8 )
 stretch_mode = 1
 __meta__ = {
@@ -814,8 +814,8 @@ __meta__ = {
 
 [node name="title" type="Label" parent="SelectedImage"]
 anchor_right = 1.0
-offset_bottom = 41.0
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_bottom = 41.0
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "image Selected:"
 align = 1
 valign = 1
@@ -826,10 +826,10 @@ __meta__ = {
 [node name="TilesetContainer" type="Control" parent="SelectedImage"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 10.0
-offset_top = 40.0
-offset_right = -35.0
-offset_bottom = -35.0
+margin_left = 10.0
+margin_top = 40.0
+margin_right = -35.0
+margin_bottom = -35.0
 mouse_filter = 2
 __meta__ = {
 "_edit_group_": true,
@@ -840,7 +840,7 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_default_cursor_shape = 2
-theme_override_styles/panel = SubResource( 4 )
+custom_styles/panel = SubResource( 4 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -858,15 +858,15 @@ __meta__ = {
 [node name="Container" type="Control" parent="SelectedImage/TilesetContainer/Tileset"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-clip_contents = true
+rect_clip_content = true
 mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Image" type="TextureRect" parent="SelectedImage/TilesetContainer/Tileset/Container"]
-offset_right = 424.0
-offset_bottom = 264.0
+margin_right = 424.0
+margin_bottom = 264.0
 mouse_filter = 2
 stretch_mode = 3
 __meta__ = {
@@ -875,8 +875,8 @@ __meta__ = {
 
 [node name="CursorSelected" type="NinePatchRect" parent="SelectedImage/TilesetContainer/Tileset/Container/Image"]
 visible = false
-offset_right = 20.0
-offset_bottom = 20.0
+margin_right = 20.0
+margin_bottom = 20.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 0, 0, 96, 144 )
 patch_margin_left = 10
@@ -886,8 +886,8 @@ patch_margin_bottom = 10
 
 [node name="CursorMouseOver" type="NinePatchRect" parent="SelectedImage/TilesetContainer/Tileset/Container/Image"]
 visible = false
-offset_right = 20.0
-offset_bottom = 20.0
+margin_right = 20.0
+margin_bottom = 20.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 192, 0, 96, 144 )
 patch_margin_left = 10
@@ -897,8 +897,8 @@ patch_margin_bottom = 10
 
 [node name="CursorDrag" type="NinePatchRect" parent="SelectedImage/TilesetContainer/Tileset/Container/Image"]
 visible = false
-offset_right = 20.0
-offset_bottom = 20.0
+margin_right = 20.0
+margin_bottom = 20.0
 texture = ExtResource( 4 )
 region_rect = Rect2( 96, 0, 96, 144 )
 patch_margin_left = 10
@@ -910,16 +910,16 @@ patch_margin_bottom = 10
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 0.0
-offset_bottom = 30.0
-custom_minimum_size = Vector2( 100, 30 )
+margin_right = 0.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 100, 30 )
 scrollbar_design = "Horizontal"
 
 [node name="VerticalBar" parent="SelectedImage/TilesetContainer" instance=ExtResource( 3 )]
 anchor_left = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = 0.0
+margin_bottom = 0.0
 mouse_filter = 2
 
 [node name="FitImageButton" type="TextureButton" parent="SelectedImage/TilesetContainer"]
@@ -927,7 +927,7 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-tooltip_text = "- [color=#FF0000]Left Click[/color]:
+hint_tooltip = "- [color=#FF0000]Left Click[/color]:
      Fit the image to the width and height of the canvas
 - [color=#FF0000]CTRL + Left Click[/color]:
      Fit the image to the height of the canvas
@@ -944,10 +944,10 @@ __meta__ = {
 }
 
 [node name="AutoTileList" type="Panel" parent="."]
-offset_left = 442.0
-offset_top = 344.0
-offset_right = 802.0
-offset_bottom = 648.0
+margin_left = 442.0
+margin_top = 344.0
+margin_right = 802.0
+margin_bottom = 648.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -957,8 +957,8 @@ __meta__ = {
 show_behind_parent = true
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 40.0
-offset_bottom = 40.0
+margin_right = 40.0
+margin_bottom = 40.0
 texture = ExtResource( 8 )
 stretch_mode = 1
 __meta__ = {
@@ -967,8 +967,8 @@ __meta__ = {
 
 [node name="title" type="Label" parent="AutoTileList"]
 anchor_right = 1.0
-offset_bottom = 41.0
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_bottom = 41.0
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Created Tiles:"
 align = 1
 valign = 1
@@ -979,12 +979,12 @@ __meta__ = {
 [node name="list" type="ItemList" parent="AutoTileList"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 40.0
-offset_right = -49.0
-offset_bottom = -52.0
-theme_override_styles/cursor = SubResource( 5 )
-theme_override_fonts/font = SubResource( 1 )
+margin_left = 20.0
+margin_top = 40.0
+margin_right = -49.0
+margin_bottom = -52.0
+custom_styles/cursor = SubResource( 5 )
+custom_fonts/font = SubResource( 1 )
 select_mode = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -994,11 +994,11 @@ __meta__ = {
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = -45.0
-offset_right = -20.0
-offset_bottom = -20.0
-tooltip_text = "Remove the tile selected"
+margin_left = 20.0
+margin_top = -45.0
+margin_right = -20.0
+margin_bottom = -20.0
+hint_tooltip = "Remove the tile selected"
 focus_mode = 0
 mouse_default_cursor_shape = 2
 disabled = true
@@ -1009,11 +1009,11 @@ __meta__ = {
 }
 
 [node name="edit_autotile_button" type="TextureButton" parent="AutoTileList"]
-offset_left = 315.0
-offset_top = 52.0
-offset_right = 347.0
-offset_bottom = 84.0
-tooltip_text = "Change the name, collision type, occlusion and animation speed of the selected tile.
+margin_left = 315.0
+margin_top = 52.0
+margin_right = 347.0
+margin_bottom = 84.0
+hint_tooltip = "Change the name, collision type, occlusion and animation speed of the selected tile.
 You can [color=#FF0000]double-click[/color] on any item on the list to perform this same action"
 mouse_default_cursor_shape = 2
 disabled = true
@@ -1025,11 +1025,11 @@ __meta__ = {
 }
 
 [node name="move_autotile_up_button" type="TextureButton" parent="AutoTileList"]
-offset_left = 315.0
-offset_top = 91.0
-offset_right = 347.0
-offset_bottom = 123.0
-tooltip_text = "Move the autotiles selected to up"
+margin_left = 315.0
+margin_top = 91.0
+margin_right = 347.0
+margin_bottom = 123.0
+hint_tooltip = "Move the autotiles selected to up"
 mouse_default_cursor_shape = 2
 disabled = true
 texture_normal = ExtResource( 26 )
@@ -1037,11 +1037,11 @@ texture_hover = ExtResource( 25 )
 texture_disabled = ExtResource( 24 )
 
 [node name="move_autotile_down_button" type="TextureButton" parent="AutoTileList"]
-offset_left = 315.0
-offset_top = 130.0
-offset_right = 347.0
-offset_bottom = 162.0
-tooltip_text = "Move the autotiles selected to down"
+margin_left = 315.0
+margin_top = 130.0
+margin_right = 347.0
+margin_bottom = 162.0
+hint_tooltip = "Move the autotiles selected to down"
 mouse_default_cursor_shape = 2
 disabled = true
 texture_normal = ExtResource( 20 )
@@ -1049,11 +1049,11 @@ texture_hover = ExtResource( 18 )
 texture_disabled = ExtResource( 19 )
 
 [node name="create_merged_autotile_button" type="TextureButton" parent="AutoTileList"]
-offset_left = 315.0
-offset_top = 169.0
-offset_right = 347.0
-offset_bottom = 201.0
-tooltip_text = "Combine the autotiles selected
+margin_left = 315.0
+margin_top = 169.0
+margin_right = 347.0
+margin_bottom = 201.0
+hint_tooltip = "Combine the autotiles selected
 into a new autotile
 (sorted top to bottom)
 
@@ -1067,11 +1067,11 @@ texture_hover = ExtResource( 22 )
 texture_disabled = ExtResource( 21 )
 
 [node name="create_animated_autotile_button" type="TextureButton" parent="AutoTileList"]
-offset_left = 315.0
-offset_top = 209.0
-offset_right = 347.0
-offset_bottom = 229.0
-tooltip_text = "Replace the selected autotiles with
+margin_left = 315.0
+margin_top = 209.0
+margin_right = 347.0
+margin_bottom = 229.0
+hint_tooltip = "Replace the selected autotiles with
 an uniq animated autotile
 (sorted top to bottom)
 
@@ -1088,10 +1088,10 @@ __meta__ = {
 }
 
 [node name="Panel" type="Panel" parent="."]
-offset_left = 847.0
-offset_top = 60.0
-offset_right = 1007.0
-offset_bottom = 252.0
+margin_left = 847.0
+margin_top = 60.0
+margin_right = 1007.0
+margin_bottom = 252.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -1099,10 +1099,10 @@ __meta__ = {
 
 [node name="title" type="Label" parent="Panel"]
 anchor_right = 1.0
-offset_top = -44.0
-offset_right = 85.0
-scale = Vector2( 0.647784, 1.11199 )
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_top = -44.0
+margin_right = 85.0
+rect_scale = Vector2( 0.647784, 1.11199 )
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Current Selection"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1111,10 +1111,10 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = 3.0
-offset_right = -3.0
-offset_bottom = -3.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1123,10 +1123,10 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="Panel/ColorRect"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = -2.0
-offset_bottom = -2.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = -2.0
+margin_bottom = -2.0
 texture = ExtResource( 6 )
 expand = true
 stretch_mode = 2
@@ -1137,10 +1137,10 @@ __meta__ = {
 [node name="preview_selection_selected" type="TextureRect" parent="Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = -4.0
-offset_bottom = -4.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
 expand = true
 stretch_mode = 6
 __meta__ = {
@@ -1151,8 +1151,8 @@ __meta__ = {
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 4.0
-tooltip_text = "Create a new tile from the current selection.
+margin_top = 4.0
+hint_tooltip = "Create a new tile from the current selection.
 
 You can [color=#FF0000]Double Click[/color] on the canvas
 to perform this same action"
@@ -1165,10 +1165,10 @@ text = "Create Tile"
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 44.0
-offset_right = 2.0
-offset_bottom = 78.0
-tooltip_text = "converts the current image to a new tilemap"
+margin_top = 44.0
+margin_right = 2.0
+margin_bottom = 78.0
+hint_tooltip = "converts the current image to a new tilemap"
 mouse_default_cursor_shape = 2
 disabled = true
 text = "Select Fast Export Preset"
@@ -1181,10 +1181,10 @@ __meta__ = {
 }
 
 [node name="Panel2" type="Panel" parent="."]
-offset_left = 847.0
-offset_top = 391.0
-offset_right = 1007.0
-offset_bottom = 605.0
+margin_left = 847.0
+margin_top = 391.0
+margin_right = 1007.0
+margin_bottom = 605.0
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -1192,10 +1192,10 @@ __meta__ = {
 
 [node name="title" type="Label" parent="Panel2"]
 anchor_right = 1.0
-offset_top = -44.0
-offset_right = 18.0
-scale = Vector2( 0.9, 1.2 )
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_top = -44.0
+margin_right = 18.0
+rect_scale = Vector2( 0.9, 1.2 )
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Preview Tile"
 align = 1
 __meta__ = {
@@ -1205,10 +1205,10 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="Panel2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = 3.0
-offset_right = -3.0
-offset_bottom = -3.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1217,10 +1217,10 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="Panel2/ColorRect"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = -2.0
-offset_bottom = -2.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = -2.0
+margin_bottom = -2.0
 texture = ExtResource( 6 )
 expand = true
 stretch_mode = 2
@@ -1231,10 +1231,10 @@ __meta__ = {
 [node name="preview_autotile_selected" type="TextureRect" parent="Panel2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = -4.0
-offset_bottom = -4.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
 expand = true
 stretch_mode = 6
 __meta__ = {
@@ -1242,34 +1242,34 @@ __meta__ = {
 }
 
 [node name="Panel3" type="Panel" parent="."]
-offset_left = 18.0
-offset_top = 664.0
-offset_right = 1002.0
-offset_bottom = 756.0
+margin_left = 18.0
+margin_top = 664.0
+margin_right = 1002.0
+margin_bottom = 756.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="Panel3"]
-offset_left = 13.0
-offset_top = 3.99994
-offset_right = 256.0
-offset_bottom = 44.9999
+margin_left = 13.0
+margin_top = 3.99994
+margin_right = 256.0
+margin_bottom = 44.9999
 text = "Save Autotiles in:"
 
 [node name="Label2" type="Label" parent="Panel3"]
-offset_left = 13.0
-offset_top = 46.9999
-offset_right = 256.0
-offset_bottom = 87.9999
+margin_left = 13.0
+margin_top = 46.9999
+margin_right = 256.0
+margin_bottom = 87.9999
 text = "Save Tileset in:"
 
 [node name="autotiles_folder" type="LineEdit" parent="Panel3"]
-offset_left = 265.0
-offset_top = 9.0
-offset_right = 785.0
-offset_bottom = 43.0
-tooltip_text = "All the tiles are saved inside a subfolder in the
+margin_left = 265.0
+margin_top = 9.0
+margin_right = 785.0
+margin_bottom = 43.0
+hint_tooltip = "All the tiles are saved inside a subfolder in the
 selected folder called the same as the Tileset
 
 After pressing the save button you can specify the
@@ -1282,11 +1282,11 @@ __meta__ = {
 }
 
 [node name="tileset_folder" type="LineEdit" parent="Panel3"]
-offset_left = 265.0
-offset_top = 50.9999
-offset_right = 785.0
-offset_bottom = 84.9999
-tooltip_text = "Folder where you go to save the Tilesets Resources.
+margin_left = 265.0
+margin_top = 50.9999
+margin_right = 785.0
+margin_bottom = 84.9999
+hint_tooltip = "Folder where you go to save the Tilesets Resources.
 
 After pressing the save button you can specify the
 names of the tilesets and tilemaps to be saved"
@@ -1298,11 +1298,11 @@ __meta__ = {
 }
 
 [node name="select_autotiles_folder_Button" type="Button" parent="Panel3"]
-offset_left = 792.0
-offset_top = 7.99994
-offset_right = 868.0
-offset_bottom = 43.9999
-tooltip_text = "All the tiles are saved inside a subfolder in the
+margin_left = 792.0
+margin_top = 7.99994
+margin_right = 868.0
+margin_bottom = 43.9999
+hint_tooltip = "All the tiles are saved inside a subfolder in the
 selected folder called the same as the Tileset
 
 After pressing the save button you can specify the
@@ -1313,11 +1313,11 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Panel3/select_autotiles_folder_Button"]
-offset_left = 6.59998
-offset_top = 1.00006
-offset_right = 92.6
-offset_bottom = 42.0001
-scale = Vector2( 0.752879, 0.771937 )
+margin_left = 6.59998
+margin_top = 1.00006
+margin_right = 92.6
+margin_bottom = 42.0001
+rect_scale = Vector2( 0.752879, 0.771937 )
 text = "select"
 align = 1
 valign = 1
@@ -1326,11 +1326,11 @@ __meta__ = {
 }
 
 [node name="select_tilesets_folder_Button" type="Button" parent="Panel3"]
-offset_left = 792.0
-offset_top = 50.9999
-offset_right = 868.0
-offset_bottom = 86.9999
-tooltip_text = "Folder where you go to save the Tilesets Resources.
+margin_left = 792.0
+margin_top = 50.9999
+margin_right = 868.0
+margin_bottom = 86.9999
+hint_tooltip = "Folder where you go to save the Tilesets Resources.
 
 After pressing the save button you can specify the
 names of the tilesets and tilemaps to be saved"
@@ -1340,11 +1340,11 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Panel3/select_tilesets_folder_Button"]
-offset_left = 6.59998
-offset_top = 1.00006
-offset_right = 92.6
-offset_bottom = 42.0001
-scale = Vector2( 0.752879, 0.771937 )
+margin_left = 6.59998
+margin_top = 1.00006
+margin_right = 92.6
+margin_bottom = 42.0001
+rect_scale = Vector2( 0.752879, 0.771937 )
 text = "select"
 align = 1
 valign = 1
@@ -1354,17 +1354,17 @@ __meta__ = {
 
 [node name="save_all_Button" type="Button" parent="Panel3"]
 modulate = Color( 1, 1, 1, 0.4 )
-offset_left = 889.0
-offset_top = 9.0
-offset_right = 971.0
-offset_bottom = 85.0
-tooltip_text = "Save all tiles and autotiles.
+margin_left = 889.0
+margin_top = 9.0
+margin_right = 971.0
+margin_bottom = 85.0
+hint_tooltip = "Save all tiles and autotiles.
 Create a new tileset and tilemap for each different tile size
 (Ex: All tiles and autotiles with size 32x32 are saved in the
 same tileset and a tilemap with this tileset is created)
 The tilemaps have a script attached to manage the animations"
 mouse_default_cursor_shape = 2
-theme_override_styles/disabled = SubResource( 10 )
+custom_styles/disabled = SubResource( 10 )
 disabled = true
 shortcut = SubResource( 12 )
 __meta__ = {
@@ -1375,8 +1375,8 @@ __meta__ = {
 [node name="Label" type="Label" parent="Panel3/save_all_Button"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = 15.0
-scale = Vector2( 1.00872, 0.808455 )
+margin_bottom = 15.0
+rect_scale = Vector2( 1.00872, 0.808455 )
 text = "SAVE
 ALL"
 align = 1
@@ -1386,8 +1386,8 @@ __meta__ = {
 }
 
 [node name="Decorations" type="Control" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+margin_right = 40.0
+margin_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1428,10 +1428,10 @@ color = Color( 0, 0, 0, 0.815686 )
 
 [node name="create_autotile_dialog" type="Panel" parent="."]
 visible = false
-offset_left = 635.0
-offset_top = 336.0
-offset_right = 990.0
-offset_bottom = 561.0
+margin_left = 635.0
+margin_top = 336.0
+margin_right = 990.0
+margin_bottom = 561.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1441,38 +1441,38 @@ position = Vector2( 287, -8 )
 texture = ExtResource( 15 )
 
 [node name="Label" type="Label" parent="create_autotile_dialog"]
-offset_left = 15.0
-offset_top = 2.0
-offset_right = 263.0
-offset_bottom = 43.0
+margin_left = 15.0
+margin_top = 2.0
+margin_right = 263.0
+margin_bottom = 43.0
 text = "Name for this tile"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LineEdit" type="LineEdit" parent="create_autotile_dialog"]
-offset_left = 11.0
-offset_top = 45.0
-offset_right = 297.0
-offset_bottom = 79.0
+margin_left = 11.0
+margin_top = 45.0
+margin_right = 297.0
+margin_bottom = 79.0
 caret_blink = true
 
 [node name="Label2" type="Label" parent="create_autotile_dialog"]
-offset_left = 15.0
-offset_top = 79.0
-offset_right = 263.0
-offset_bottom = 120.0
+margin_left = 15.0
+margin_top = 79.0
+margin_right = 263.0
+margin_bottom = 120.0
 text = "Collision Type"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="OptionButton" type="OptionButton" parent="create_autotile_dialog"]
-offset_left = 11.0
-offset_top = 121.0
-offset_right = 231.0
-offset_bottom = 155.0
-tooltip_text = "Select type of collision for this tile:
+margin_left = 11.0
+margin_top = 121.0
+margin_right = 231.0
+margin_bottom = 155.0
+hint_tooltip = "Select type of collision for this tile:
 
 [color=green]NO COLLISION[/color]: this tile has not a collision
 [color=green]SIMPLE COLLISION[/color]: this tile has a rectangle collision
@@ -1491,11 +1491,11 @@ __meta__ = {
 }
 
 [node name="SpinBox" type="SpinBox" parent="create_autotile_dialog"]
-offset_left = 235.0
-offset_top = 121.0
-offset_right = 321.0
-offset_bottom = 155.0
-tooltip_text = "When collision type is equal to \"[color=red]simple collision[/color]\"
+margin_left = 235.0
+margin_top = 121.0
+margin_right = 321.0
+margin_bottom = 155.0
+hint_tooltip = "When collision type is equal to \"[color=red]simple collision[/color]\"
 you can set what percentage of the tile
 will have collision starting from the bottom to up."
 min_value = 1.0
@@ -1506,47 +1506,47 @@ __meta__ = {
 }
 
 [node name="Label4" type="Label" parent="create_autotile_dialog"]
-offset_left = 323.0
-offset_top = 113.0
-offset_right = 363.0
-offset_bottom = 154.0
+margin_left = 323.0
+margin_top = 113.0
+margin_right = 363.0
+margin_bottom = 154.0
 text = "%"
 
 [node name="Label3" type="Label" parent="create_autotile_dialog"]
-offset_left = 15.0
-offset_top = 151.0
-offset_right = 263.0
-offset_bottom = 192.0
+margin_left = 15.0
+margin_top = 151.0
+margin_right = 263.0
+margin_bottom = 192.0
 text = "Occlusion"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CheckButton" type="CheckButton" parent="create_autotile_dialog"]
-offset_top = 187.0
-offset_right = 76.0
-offset_bottom = 227.0
-tooltip_text = "Occludes light cast by a Light2D, casting shadows."
+margin_top = 187.0
+margin_right = 76.0
+margin_bottom = 227.0
+hint_tooltip = "Occludes light cast by a Light2D, casting shadows."
 mouse_default_cursor_shape = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="close_button" type="TextureButton" parent="create_autotile_dialog"]
-offset_left = 273.0
-offset_top = 184.0
-offset_right = 305.0
-offset_bottom = 216.0
+margin_left = 273.0
+margin_top = 184.0
+margin_right = 305.0
+margin_bottom = 216.0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 14 )
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 17 )
 
 [node name="ok_button" type="TextureButton" parent="create_autotile_dialog"]
-offset_left = 313.0
-offset_top = 184.0
-offset_right = 345.0
-offset_bottom = 216.0
+margin_left = 313.0
+margin_top = 184.0
+margin_right = 345.0
+margin_bottom = 216.0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 16 )
 texture_normal = ExtResource( 16 )
@@ -1554,11 +1554,11 @@ texture_hover = ExtResource( 11 )
 
 [node name="edit_autotile_dialog" type="Panel" parent="."]
 visible = false
-offset_left = 492.0
-offset_top = 432.0
-offset_right = 845.0
-offset_bottom = 717.0
-tooltip_text = "When collision type is equal to \"simple collision\"
+margin_left = 492.0
+margin_top = 432.0
+margin_right = 845.0
+margin_bottom = 717.0
+hint_tooltip = "When collision type is equal to \"simple collision\"
 you can set what percentage of the tile
 will have collision starting from the bottom to up."
 __meta__ = {
@@ -1571,40 +1571,40 @@ position = Vector2( 287, -8 )
 texture = ExtResource( 15 )
 
 [node name="Label" type="Label" parent="edit_autotile_dialog"]
-offset_left = 15.0
-offset_top = 2.0
-offset_right = 263.0
-offset_bottom = 43.0
-scale = Vector2( 0.9, 1 )
+margin_left = 15.0
+margin_top = 2.0
+margin_right = 263.0
+margin_bottom = 43.0
+rect_scale = Vector2( 0.9, 1 )
 text = "Name for tile selected"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="LineEdit" type="LineEdit" parent="edit_autotile_dialog"]
-offset_left = 11.0
-offset_top = 45.0
-offset_right = 297.0
-offset_bottom = 79.0
+margin_left = 11.0
+margin_top = 45.0
+margin_right = 297.0
+margin_bottom = 79.0
 caret_blink = true
 
 [node name="Label3" type="Label" parent="edit_autotile_dialog"]
-offset_left = 15.0
-offset_top = 72.0
-offset_right = 328.0
-offset_bottom = 113.0
-scale = Vector2( 0.9, 1 )
+margin_left = 15.0
+margin_top = 72.0
+margin_right = 328.0
+margin_bottom = 113.0
+rect_scale = Vector2( 0.9, 1 )
 text = "Collision type"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="OptionButton" type="OptionButton" parent="edit_autotile_dialog"]
-offset_left = 11.0
-offset_top = 113.0
-offset_right = 231.0
-offset_bottom = 147.0
-tooltip_text = "Select type of collision for this tile:
+margin_left = 11.0
+margin_top = 113.0
+margin_right = 231.0
+margin_bottom = 147.0
+hint_tooltip = "Select type of collision for this tile:
 
 [color=green]NO COLLISION[/color]: this tile has not a collision
 [color=green]SIMPLE COLLISION[/color]: this tile has a rectangle collision
@@ -1623,11 +1623,11 @@ __meta__ = {
 }
 
 [node name="SpinBox2" type="SpinBox" parent="edit_autotile_dialog"]
-offset_left = 237.0
-offset_top = 114.0
-offset_right = 323.0
-offset_bottom = 148.0
-tooltip_text = "When collision type is equal to \"[color=red]simple collision[/color]\"
+margin_left = 237.0
+margin_top = 114.0
+margin_right = 323.0
+margin_bottom = 148.0
+hint_tooltip = "When collision type is equal to \"[color=red]simple collision[/color]\"
 you can set what percentage of the tile
 will have collision starting from the bottom to up."
 min_value = 1.0
@@ -1638,54 +1638,54 @@ __meta__ = {
 }
 
 [node name="Label5" type="Label" parent="edit_autotile_dialog"]
-offset_left = 324.6
-offset_top = 105.0
-offset_right = 364.6
-offset_bottom = 146.0
+margin_left = 324.6
+margin_top = 105.0
+margin_right = 364.6
+margin_bottom = 146.0
 text = "%"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label4" type="Label" parent="edit_autotile_dialog"]
-offset_left = 15.0
-offset_top = 140.0
-offset_right = 328.0
-offset_bottom = 181.0
-scale = Vector2( 0.9, 1 )
+margin_left = 15.0
+margin_top = 140.0
+margin_right = 328.0
+margin_bottom = 181.0
+rect_scale = Vector2( 0.9, 1 )
 text = "Occlusion"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CheckButton" type="CheckButton" parent="edit_autotile_dialog"]
-offset_top = 172.0
-offset_right = 76.0
-offset_bottom = 212.0
+margin_top = 172.0
+margin_right = 76.0
+margin_bottom = 212.0
 
 [node name="Label2" type="Label" parent="edit_autotile_dialog"]
-offset_left = 15.0
-offset_top = 199.0
-offset_right = 263.0
-offset_bottom = 240.0
+margin_left = 15.0
+margin_top = 199.0
+margin_right = 263.0
+margin_bottom = 240.0
 text = "Animation Speed"
 
 [node name="SpinBox" type="SpinBox" parent="edit_autotile_dialog"]
-offset_left = 11.0
-offset_top = 242.0
-offset_right = 146.0
-offset_bottom = 276.0
-tooltip_text = "Occludes light cast by a Light2D, casting shadows."
+margin_left = 11.0
+margin_top = 242.0
+margin_right = 146.0
+margin_bottom = 276.0
+hint_tooltip = "Occludes light cast by a Light2D, casting shadows."
 min_value = 0.01
 max_value = 9999.0
 step = 0.1
 value = 0.01
 
 [node name="close_button" type="TextureButton" parent="edit_autotile_dialog"]
-offset_left = 310.0
-offset_top = 243.0
-offset_right = 342.0
-offset_bottom = 275.0
+margin_left = 310.0
+margin_top = 243.0
+margin_right = 342.0
+margin_bottom = 275.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 14 )
@@ -1693,10 +1693,10 @@ texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 17 )
 
 [node name="ok_button" type="TextureButton" parent="edit_autotile_dialog"]
-offset_left = 269.0
-offset_top = 243.0
-offset_right = 301.0
-offset_bottom = 275.0
+margin_left = 269.0
+margin_top = 243.0
+margin_right = 301.0
+margin_bottom = 275.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 16 )
@@ -1708,10 +1708,10 @@ __meta__ = {
 
 [node name="error1_dialog" type="Panel" parent="."]
 visible = false
-offset_left = 491.0
-offset_top = 509.0
-offset_right = 843.0
-offset_bottom = 608.0
+margin_left = 491.0
+margin_top = 509.0
+margin_right = 843.0
+margin_bottom = 608.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1721,11 +1721,11 @@ position = Vector2( 287, -8 )
 texture = ExtResource( 15 )
 
 [node name="Label" type="Label" parent="error1_dialog"]
-offset_left = 89.0
-offset_top = 4.0
-offset_right = 341.0
-offset_bottom = 90.0
-theme_override_fonts/font = SubResource( 17 )
+margin_left = 89.0
+margin_top = 4.0
+margin_right = 341.0
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 17 )
 text = "Error: One or more
 selected tiles are of
 different size or type"
@@ -1744,10 +1744,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -263.0
-offset_top = -67.5
-offset_right = 263.0
-offset_bottom = 67.5
+margin_left = -263.0
+margin_top = -67.5
+margin_right = 263.0
+margin_bottom = 67.5
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1757,11 +1757,11 @@ position = Vector2( 47, 72 )
 texture = ExtResource( 31 )
 
 [node name="Label" type="RichTextLabel" parent="error2_dialog"]
-offset_left = 89.0
-offset_top = 10.0
-offset_right = 514.0
-offset_bottom = 126.0
-theme_override_fonts/normal_font = SubResource( 18 )
+margin_left = 89.0
+margin_top = 10.0
+margin_right = 514.0
+margin_bottom = 126.0
+custom_fonts/normal_font = SubResource( 18 )
 bbcode_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1773,11 +1773,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -262.0
-offset_top = -277.0
-offset_right = 268.0
-offset_bottom = 178.0
-theme_override_styles/panel = SubResource( 19 )
+margin_left = -262.0
+margin_top = -277.0
+margin_right = 268.0
+margin_bottom = 178.0
+custom_styles/panel = SubResource( 19 )
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -1790,11 +1790,11 @@ scale = Vector2( 2.8475, 3.14333 )
 texture = ExtResource( 8 )
 
 [node name="Label" type="Label" parent="SaveDialog"]
-offset_top = 1.0
-offset_right = 529.0
-offset_bottom = 60.0
-scale = Vector2( 0.9, 1 )
-theme_override_colors/font_color = Color( 0.196078, 0.54902, 1, 1 )
+margin_top = 1.0
+margin_right = 529.0
+margin_bottom = 60.0
+rect_scale = Vector2( 0.9, 1 )
+custom_colors/font_color = Color( 0.196078, 0.54902, 1, 1 )
 text = "Save Images, Tilesets and Tilemaps"
 align = 1
 valign = 1
@@ -1803,10 +1803,10 @@ __meta__ = {
 }
 
 [node name="BackgroundContainer" type="ColorRect" parent="SaveDialog"]
-offset_left = 25.0
-offset_top = 61.0
-offset_right = 506.0
-offset_bottom = 361.0
+margin_left = 25.0
+margin_top = 61.0
+margin_right = 506.0
+margin_bottom = 361.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1814,10 +1814,10 @@ __meta__ = {
 [node name="Container" type="ScrollContainer" parent="SaveDialog/BackgroundContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 10.0
-offset_top = 10.0
-offset_right = -10.0
-offset_bottom = -10.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -1825,10 +1825,10 @@ __meta__ = {
 [node name="VBox" type="VBoxContainer" parent="SaveDialog/BackgroundContainer/Container"]
 
 [node name="CloseButton" type="TextureButton" parent="SaveDialog"]
-offset_left = 478.0
-offset_top = 15.0
-offset_right = 510.0
-offset_bottom = 47.0
+margin_left = 478.0
+margin_top = 15.0
+margin_right = 510.0
+margin_bottom = 47.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 shortcut = SubResource( 21 )
@@ -1839,17 +1839,17 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="SaveDialog"]
-offset_left = 32.0
-offset_top = 362.0
-offset_right = 265.0
-offset_bottom = 403.0
+margin_left = 32.0
+margin_top = 362.0
+margin_right = 265.0
+margin_bottom = 403.0
 text = "Save Tilemaps in:"
 
 [node name="LineEdit" type="LineEdit" parent="SaveDialog"]
-offset_left = 29.0
-offset_top = 406.0
-offset_right = 421.0
-offset_bottom = 440.0
+margin_left = 29.0
+margin_top = 406.0
+margin_right = 421.0
+margin_bottom = 440.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 text = "res://Scenes/"
@@ -1859,11 +1859,11 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="SaveDialog"]
-offset_left = 437.0
-offset_top = 374.0
-offset_right = 504.0
-offset_bottom = 437.0
-tooltip_text = "Save all to disk in the paths selected.
+margin_left = 437.0
+margin_top = 374.0
+margin_right = 504.0
+margin_bottom = 437.0
+hint_tooltip = "Save all to disk in the paths selected.
 
 If the destination folder contains files with the same names
 as the files to be saved, these files will be renamed before
@@ -1878,9 +1878,9 @@ __meta__ = {
 [node name="Label" type="Label" parent="SaveDialog/Button"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 29.0
-offset_bottom = 26.0
-scale = Vector2( 0.7, 0.7 )
+margin_right = 29.0
+margin_bottom = 26.0
+rect_scale = Vector2( 0.7, 0.7 )
 text = "Start
 SAVE"
 align = 1
@@ -1888,21 +1888,21 @@ valign = 1
 
 [node name="CustomFileDialog" parent="." instance=ExtResource( 9 )]
 visible = false
-offset_left = 208.0
-offset_top = 56.0
-offset_right = 213.76
-offset_bottom = 50.8799
+margin_left = 208.0
+margin_top = 56.0
+margin_right = 213.76
+margin_bottom = 50.8799
 allow_external_files = true
 
 [node name="path_LineEdit" parent="CustomFileDialog/PanelBottom" index="4"]
-offset_right = 6.12799
+margin_right = 6.12799
 
 [node name="drive_select_option_button" parent="CustomFileDialog/PanelBottom" index="5"]
 visible = false
-offset_left = -55.0
-offset_right = -1.0
-offset_bottom = -220.5
-scale = Vector2( 1, 0.9 )
+margin_left = -55.0
+margin_right = -1.0
+margin_bottom = -220.5
+rect_scale = Vector2( 1, 0.9 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "CursorsBlink"
@@ -1939,11 +1939,11 @@ anchor_left = 0.372
 anchor_top = 0.418
 anchor_right = 0.709
 anchor_bottom = 0.573
-offset_left = -279.0
-offset_top = -265.0
-offset_right = -335.5
-offset_bottom = -301.5
-scale = Vector2( 1.83768, 2.58954 )
+margin_left = -279.0
+margin_top = -265.0
+margin_right = -335.5
+margin_bottom = -301.5
+rect_scale = Vector2( 1.83768, 2.58954 )
 text = "SAVING..."
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1966,11 +1966,11 @@ anchor_bottom = 1.0
 color = Color( 0, 0, 0, 0.87451 )
 
 [node name="WindowDialog" type="Window" parent="ultimate_revision_dialog"]
-offset_left = 153.0
-offset_top = 184.0
-offset_right = 823.0
-offset_bottom = 646.0
-theme_override_constants/close_h_ofs = -16384
+margin_left = 153.0
+margin_top = 184.0
+margin_right = 823.0
+margin_bottom = 646.0
+custom_constants/close_h_ofs = -16384
 title = "Edit Collision And Occlusion"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -1979,42 +1979,42 @@ __meta__ = {
 [node name="HBoxContainer" type="HBoxContainer" parent="ultimate_revision_dialog/WindowDialog"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 6.0
-offset_top = 6.0
-offset_right = -5.99994
-offset_bottom = -2.0
+margin_left = 6.0
+margin_top = 6.0
+margin_right = -5.99994
+margin_bottom = -2.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer"]
-offset_right = 240.0
-offset_bottom = 454.0
-custom_minimum_size = Vector2( 240, 450 )
+margin_right = 240.0
+margin_bottom = 454.0
+rect_min_size = Vector2( 240, 450 )
 
 [node name="Label" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/VBoxContainer"]
-offset_right = 240.0
-offset_bottom = 41.0
+margin_right = 240.0
+margin_bottom = 41.0
 text = "TILES"
 align = 1
 
 [node name="ItemList" type="ItemList" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/VBoxContainer"]
-offset_top = 45.0
-offset_right = 240.0
-offset_bottom = 454.0
+margin_top = 45.0
+margin_right = 240.0
+margin_bottom = 454.0
 size_flags_vertical = 3
 
 [node name="Panel" type="Panel" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer"]
-offset_left = 244.0
-offset_right = 658.0
-offset_bottom = 454.0
+margin_left = 244.0
+margin_right = 658.0
+margin_bottom = 454.0
 size_flags_horizontal = 3
 
 [node name="Panel4" type="Panel" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel"]
-offset_left = 111.0
-offset_top = 62.4998
-offset_right = 271.0
-offset_bottom = 276.5
+margin_left = 111.0
+margin_top = 62.4998
+margin_right = 271.0
+margin_bottom = 276.5
 __meta__ = {
 "_edit_group_": true,
 "_edit_use_anchors_": false
@@ -2022,10 +2022,10 @@ __meta__ = {
 
 [node name="title" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel4"]
 anchor_right = 1.0
-offset_top = -44.0
-offset_right = 18.0
-scale = Vector2( 0.9, 1.2 )
-theme_override_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
+margin_top = -44.0
+margin_right = 18.0
+rect_scale = Vector2( 0.9, 1.2 )
+custom_colors/font_color = Color( 0.396078, 0.858824, 1, 1 )
 text = "Preview Tile"
 align = 1
 __meta__ = {
@@ -2035,10 +2035,10 @@ __meta__ = {
 [node name="ColorRect" type="ColorRect" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel4"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 3.0
-offset_top = 3.0
-offset_right = -3.0
-offset_bottom = -3.0
+margin_left = 3.0
+margin_top = 3.0
+margin_right = -3.0
+margin_bottom = -3.0
 color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -2047,10 +2047,10 @@ __meta__ = {
 [node name="TextureRect" type="TextureRect" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel4/ColorRect"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = -2.0
-offset_bottom = -2.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = -2.0
+margin_bottom = -2.0
 texture = ExtResource( 6 )
 expand = true
 stretch_mode = 2
@@ -2061,10 +2061,10 @@ __meta__ = {
 [node name="preview_autotile_selected" type="TextureRect" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel4"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = -4.0
-offset_bottom = -4.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
 expand = true
 stretch_mode = 6
 __meta__ = {
@@ -2072,31 +2072,31 @@ __meta__ = {
 }
 
 [node name="Panel" type="Panel" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel"]
-offset_left = 28.0
-offset_top = 290.5
-offset_right = 384.0
-offset_bottom = 437.5
+margin_left = 28.0
+margin_top = 290.5
+margin_right = 384.0
+margin_bottom = 437.5
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Label6" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
-offset_left = 12.0
-offset_top = 6.49976
-offset_right = 325.0
-offset_bottom = 47.4998
-scale = Vector2( 0.9, 1 )
+margin_left = 12.0
+margin_top = 6.49976
+margin_right = 325.0
+margin_bottom = 47.4998
+rect_scale = Vector2( 0.9, 1 )
 text = "Collision type"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="OptionButton2" type="OptionButton" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
-offset_left = 8.0
-offset_top = 47.4998
-offset_right = 228.0
-offset_bottom = 81.4998
-tooltip_text = "Select type of collision for this tile:
+margin_left = 8.0
+margin_top = 47.4998
+margin_right = 228.0
+margin_bottom = 81.4998
+hint_tooltip = "Select type of collision for this tile:
 
 [color=green]NO COLLISION[/color]: this tile has not a collision
 [color=green]SIMPLE COLLISION[/color]: this tile has a rectangle collision
@@ -2115,11 +2115,11 @@ __meta__ = {
 }
 
 [node name="SpinBox3" type="SpinBox" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
-offset_left = 234.0
-offset_top = 48.4998
-offset_right = 320.0
-offset_bottom = 82.4998
-tooltip_text = "When collision type is equal to \"[color=red]simple collision[/color]\"
+margin_left = 234.0
+margin_top = 48.4998
+margin_right = 320.0
+margin_bottom = 82.4998
+hint_tooltip = "When collision type is equal to \"[color=red]simple collision[/color]\"
 you can set what percentage of the tile
 will have collision starting from the bottom to up."
 min_value = 1.0
@@ -2130,38 +2130,38 @@ __meta__ = {
 }
 
 [node name="Label7" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
-offset_left = 321.6
-offset_top = 39.4998
-offset_right = 361.6
-offset_bottom = 80.4998
+margin_left = 321.6
+margin_top = 39.4998
+margin_right = 361.6
+margin_bottom = 80.4998
 text = "%"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label8" type="Label" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
-offset_left = 12.0
-offset_top = 74.4998
-offset_right = 325.0
-offset_bottom = 115.5
-scale = Vector2( 0.9, 1 )
+margin_left = 12.0
+margin_top = 74.4998
+margin_right = 325.0
+margin_bottom = 115.5
+rect_scale = Vector2( 0.9, 1 )
 text = "Occlusion"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CheckButton2" type="CheckButton" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel/Panel"]
-offset_left = -3.0
-offset_top = 106.5
-offset_right = 73.0
-offset_bottom = 146.5
+margin_left = -3.0
+margin_top = 106.5
+margin_right = 73.0
+margin_bottom = 146.5
 
 [node name="TextureButton" type="TextureButton" parent="ultimate_revision_dialog/WindowDialog/HBoxContainer/Panel"]
-offset_left = 369.0
-offset_top = 13.5313
-offset_right = 401.0
-offset_bottom = 45.5313
-tooltip_text = "Close Dialog"
+margin_left = 369.0
+margin_top = 13.5313
+margin_right = 401.0
+margin_bottom = 45.5313
+hint_tooltip = "Close Dialog"
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 14 )
 texture_hover = ExtResource( 17 )

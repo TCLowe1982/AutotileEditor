@@ -1,4 +1,4 @@
-tool
+@tool
 extends EditorPlugin
 
 # Initial variables:
@@ -6,10 +6,10 @@ extends EditorPlugin
 
 # Add menu button to canvas editor:
 func _enter_tree()-> void:
-	add_tool_menu_item("Autotile Editor", self, "clickedButton")
+	add_tool_menu_item("Autotile Editor", clickedButton)
 	#button = Button.new()
 	#button.set_text("Tool - Create Autotile")
-	#button.connect("pressed",  self, "clickedButton")
+	#button.connect("pressed", clickedButton)
 	# CONTAINER_CANVAS_EDITOR_MENU, CONTAINER_TOOLBAR
 	#add_control_to_container(CONTAINER_CANVAS_EDITOR_MENU, button)
 
@@ -21,8 +21,8 @@ func clickedButton(ud):
 	ProjectSettings.save()
 	var executable = OS.get_executable_path()
 	var array = ["res://Addons/RPG_maker_Autotile2_3x3/CreateAutoTile.tscn"]
-	var args = PoolStringArray(array)
-	OS.execute(executable, args)
+	var args = PackedStringArray(array)
+	OS.create_process(executable, args)
 	ProjectSettings.set_setting("application/config/icon", _icon)
 	ProjectSettings.set_setting("application/config/name", _name)
 	ProjectSettings.save()
