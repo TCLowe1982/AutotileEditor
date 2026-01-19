@@ -14,7 +14,7 @@ func _ready() -> void:
 		label.add_theme_font_override("font", normal_font)
 
 
-func set_tooltip_text(_text):
+func update_tooltip_text(_text):
 	text = _text
 	var font = get_theme_font("normal_font", "RichTextLabel")
 	if not font:

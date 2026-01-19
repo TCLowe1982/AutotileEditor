@@ -13,14 +13,14 @@ func _enter_tree()-> void:
 	# CONTAINER_CANVAS_EDITOR_MENU, CONTAINER_TOOLBAR
 	#add_control_to_container(CONTAINER_CANVAS_EDITOR_MENU, button)
 
-func clickedButton(ud):
+func clickedButton():
 	var _icon = ProjectSettings.get_setting("application/config/icon")
 	var _name = ProjectSettings.get_setting("application/config/name")
 	ProjectSettings.set_setting("application/config/icon", "res://addons/RPG_maker_Autotile2_3x3/icon.png")
 	ProjectSettings.set_setting("application/config/name", "Create Autotiles by Newold")
 	ProjectSettings.save()
 	var executable = OS.get_executable_path()
-	var array = ["res://Addons/RPG_maker_Autotile2_3x3/CreateAutoTile.tscn"]
+	var array = ["res://addons/RPG_maker_Autotile2_3x3/CreateAutoTile.tscn"]
 	var args = PackedStringArray(array)
 	OS.create_process(executable, args)
 	ProjectSettings.set_setting("application/config/icon", _icon)

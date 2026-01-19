@@ -222,7 +222,7 @@ func change_design(value):
 	
 
 func _on_item_rect_changed() -> void:
-	if pattern and Engine.editor_hint:
+	if pattern and Engine.is_editor_hint():
 		set_images(true)
 
 
@@ -392,7 +392,7 @@ func _process(delta: float) -> void:
 		if (scrollbar_design == "Vertical" and
 			top.position.y < data.min_scroll.y):
 				top.position.y = data.min_scroll.y
-	if Engine.editor_hint:
+	if Engine.is_editor_hint():
 		if initializing:
 			can_auto_change_position = true
 			need_refresh = false

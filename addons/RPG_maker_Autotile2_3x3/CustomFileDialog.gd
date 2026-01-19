@@ -276,9 +276,9 @@ func _on_CloseButton_button_up() -> void:
 	else:
 		hide()
 	
-func show():
+func show_dialog():
 	populate_files()
-	super.show()
+	show()
 	ok_button.grab_focus()
 
 

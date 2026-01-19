@@ -149,13 +149,16 @@ var thread
 signal save_completed()
 
 func _ready() -> void:
-	size = Vector2(1024, 768)
+	# Set a reasonable window size
+	var window_size = Vector2(1280, 900)
 	var screen_size = DisplayServer.screen_get_size()
-	var window_size = size
-	# Screen stretch is now configured in project settings
+	
+	# Configure the window
 	get_window().size = window_size
-	get_window().position = screen_size*0.5 - window_size*0.5
+	get_window().position = screen_size * 0.5 - window_size * 0.5
 	get_window().always_on_top = true
+	get_window().min_size = Vector2(1024, 768)
+	get_window().content_scale_mode = Window.CONTENT_SCALE_MODE_DISABLED
 	
 	load_initial_config()
 	
@@ -506,7 +509,7 @@ func hide_all_dialogs():
 	
 func show_dialog(dialog):
 	hide_behind.visible = true
-	dialog.visible = true
+	dialog.show_dialog()
 	tooltip.hide_all()
 
 
@@ -1331,7 +1334,7 @@ func animate_autotile_selected() -> void:
 func _on_remove_autotile_button_up() -> void:
 	tooltip.hide_all()
 	var index = autotile_list.get_selected_items()[-1]
-	if get_focus_owner() != autotile_list: return
+	if get_viewport().gui_get_focus_owner() != autotile_list: return
 	var ids = autotile_list.get_selected_items()
 	ids.invert()
 	for i in ids:
@@ -1425,7 +1428,7 @@ func get_data_struct(_data : Array) -> Dictionary:
 	return data
 	
 func save_dialog_on_focus_changed():
-	var focused = get_focus_owner()
+	var focused = get_viewport().gui_get_focus_owner()
 	var focus_size = focused.size.y
 	var parent
 	if focused.get_parent() is SpinBox:
@@ -1449,7 +1452,7 @@ func save_dialog_on_focus_exited(last_focused):
 	last_focused.deselect()
 	if save_dialog.visible:
 		await get_tree().process_frame
-		var focused = get_focus_owner()
+		var focused = get_viewport().gui_get_focus_owner()
 		if !focused is LineEdit:
 			if save_dialog_container_vbox.get_child_count() != 0:
 				var child = save_dialog_container_vbox.get_child(0)
@@ -1512,7 +1515,7 @@ func show_tooltip(child):
 	if child.tooltip_text != "":
 		child.editor_description = child.tooltip_text.lstrip(" ")
 		child.tooltip_text = ""
-	tooltip.set_tooltip_text(child.editor_description)
+	tooltip.update_tooltip_text(child.editor_description)
 	tooltip.show_tooltip()
 	
 func hide_tooltip(child, value = false):
@@ -2002,7 +2005,7 @@ func save_all(user_data = null) -> void:
 				header += "polygon = PackedVector2Array( %s )\n\n" % pol
 				var new_text = ""
 				if rect.type == -1:
-					 new_text = "#TILE_ID#/occluder = SubResource( %s )" % resource_id
+					new_text = "#TILE_ID#/occluder = SubResource( %s )" % resource_id
 				else:
 					for y in r.size.y / rect.tile_size.y:
 						for x in r.size.x / rect.tile_size.x:
@@ -2275,7 +2278,7 @@ func _on_create_autotile_dialog_ok_button_focus_exited() -> void:
 		await get_tree().process_frame
 		create_autotile_dialog_t.grab_focus()
 		
-func _unhandled_key_input(event: InputEventKey) -> void:
+func _unhandled_key_input(event: InputEvent) -> void:
 	if (hide_behind.visible and event is InputEventKey and
 		event.is_pressed() and event.keycode == KEY_ESCAPE):
 			if !save_dialog.visible and !file_dialog.visible:
