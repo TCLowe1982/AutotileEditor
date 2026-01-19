@@ -57,11 +57,11 @@ func _on_CustomFile_mouse_entered() -> void:
 	selection.visible = true
 
 func _on_CustomFile_mouse_exited() -> void:
-	selection.visible = selected
+	selection.visible = is_selected
 	
 func set_selected(value):
-	selected = value
-	selection.visible = selected
+	is_selected = value
+	selection.visible = is_selected
 
 
 func _on_CustomFile_gui_input(event: InputEvent) -> void:
@@ -73,7 +73,7 @@ func _on_CustomFile_gui_input(event: InputEvent) -> void:
 			elif directory_mode:
 				emit_signal("change_directory", full_path, id)
 		elif event.is_pressed():
-			set_selected(!selected)
+			set_selected(!is_selected)
 			if is_dir:
 				if !directory_mode:
 					emit_signal("change_directory", full_path, id)

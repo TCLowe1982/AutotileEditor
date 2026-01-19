@@ -1512,11 +1512,11 @@ func show_tooltip(child):
 	if child.tooltip_text != "":
 		child.editor_description = child.tooltip_text.lstrip(" ")
 		child.tooltip_text = ""
-	tooltip.set_text(child.editor_description)
-	tooltip.show()
+	tooltip.set_tooltip_text(child.editor_description)
+	tooltip.show_tooltip()
 	
 func hide_tooltip(child, value = false):
-	tooltip.hide(value)
+	tooltip.hide_tooltip(value)
 	
 func update_tooltip_position(event : InputEvent, child = null):
 	if child.tooltip_text != "":

@@ -124,7 +124,7 @@ func set_images(set_initial_position = false):
 	set_background()
 	set_top(set_initial_position)
 	# Save max scroll
-	data.max_scroll = rect_size - top.size - Vector2(2, 2)
+	data.max_scroll = size - top.size - Vector2(2, 2)
 	
 func set_background():
 	if !background_shadow: return
@@ -163,18 +163,18 @@ func set_top(set_initial_position):
 	var x; var y; var s;
 	if scrollbar_design == "Horizontal":
 		top.size.x = get_horizontal_top_width()
-		top.size.y = rect_size.y - 4
+		top.size.y = size.y - 4
 		top_shadow.size = top.size
 		if set_initial_position:
 			x = 2
-			y = rect_size.y * 0.5 - top.size.y * 0.5
+			y = size.y * 0.5 - top.size.y * 0.5
 			top.position = Vector2(x, y)
 	else:
-		top.size.x = rect_size.x - 4
+		top.size.x = size.x - 4
 		top.size.y = get_vertical_top_height()
 		top_shadow.size = top.size
 		if set_initial_position:
-			x = rect_size.x * 0.5 - top.size.x * 0.5
+			x = size.x * 0.5 - top.size.x * 0.5
 			y = 2
 			top.position = Vector2(x, y)
 	top_shadow.position = Vector2(2, 5)
@@ -191,8 +191,8 @@ func set_top(set_initial_position):
 	
 func get_horizontal_top_width() -> float:
 	if data.target_max_scroll.x <= 0:
-		return rect_size.x - 4
-	var s = rect_size.x - 2
+		return size.x - 4
+	var s = size.x - 2
 	var ratio = data.target_max_scroll.x / s
 	var value = max(16, s - s * ratio)
 	data.max_scroll.x = s - value
@@ -200,8 +200,8 @@ func get_horizontal_top_width() -> float:
 	
 func get_vertical_top_height() -> float:
 	if data.target_max_scroll.y <= 0:
-		return rect_size.y - 4
-	var s = rect_size.y - 2
+		return size.y - 4
+	var s = size.y - 2
 	var ratio = data.target_max_scroll.y / s
 	var value = max(16, s - s * ratio)
 	data.max_scroll.y = s - value
@@ -316,13 +316,13 @@ func fix_top_position():
 	if scrollbar_design == "Horizontal":
 		if top.position.x < data.min_scroll.x:
 			top.position.x = data.min_scroll.x
-		if top.position.x + top.size.x > rect_size.x - 4:
-			top.position.x = rect_size.x - 4 - top.size.x
+		if top.position.x + top.size.x > size.x - 4:
+			top.position.x = size.x - 4 - top.size.x
 	else:
 		if top.position.y < data.min_scroll.y:
 			top.position.y = data.min_scroll.y
-		if top.position.y + top.size.y > rect_size.y - 4:
-			top.position.y = rect_size.y - 4 - top.size.y
+		if top.position.y + top.size.y > size.y - 4:
+			top.position.y = size.y - 4 - top.size.y
 
 
 func _on_background_gui_input(event: InputEvent) -> void:
@@ -401,6 +401,6 @@ func _process(delta: float) -> void:
 			_ready()
 			need_refresh = false
 			if need_change_position and can_auto_change_position:
-				rect_size = Vector2(rect_size.y, rect_size.x)
+				size = Vector2(size.y, size.x)
 				need_change_position = false
 		set_process(false)
